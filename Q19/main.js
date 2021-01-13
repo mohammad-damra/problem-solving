@@ -7,9 +7,11 @@ Make an array method that can return whether or not a context array is a subset 
 To simplify the problem, you can assume that both arrays will contain only strings
 */
 
-Array.prototype.isSubsetOf = function (array) {
-  // YOUR CODE HERE
-}
+Array.prototype.isSubsetOf = function(arr) {
+	// YOUR CODE HERE
+	const result = Array.prototype.every((elem) => arr.includes(elem));
+	return result;
+};
 
 /* 
 Examples:
