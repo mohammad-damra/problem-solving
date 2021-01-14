@@ -7,10 +7,13 @@ Given a properly formatted URL, return the query string data as an array of key-
 If the url does not contain a query string, return undefined
 */
 
-function parseQueryString() {
-  // YOUR CODE HERE
+function parseQueryString(str) {
+	// YOUR CODE HERE
+	let subStr = str.substring(str.indexOf('?') + 1);
+	let x = str.indexOf('=');
+	console.log('x', x);
+	return subStr;
 }
-
 
 /* 
 Examples:
