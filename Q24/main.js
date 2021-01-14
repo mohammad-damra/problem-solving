@@ -10,8 +10,18 @@ Bubble sort is considered the most basic sorting algorithm in Computer Science. 
   • Once it gets to the end of the array, it starts over and repeats the process until the array is sorted numerically.
 */
 
-function bubbleSort() {
-  // YOUR CODE HERE
+function bubbleSort(arr) {
+	// YOUR CODE HERE
+	for (let i = 0; i < arr.length; i++) {
+		for (let j = 0; j < arr.length; j++) {
+			if (arr[j] > arr[j + 1]) {
+				let tmp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = tmp;
+			}
+		}
+	}
+	return arr;
 }
 
 /* 
