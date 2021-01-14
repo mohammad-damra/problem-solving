@@ -6,8 +6,13 @@ console.log('Problem Solving Q:26 ');
 Write a JavaScript function to clone an array.
 */
 
-function array_Clone() {
-  // YOUR CODE HERE
+function array_Clone(arr) {
+	// YOUR CODE HERE
+	let cloneArr = [];
+	for (let i = 0; i < arr.length; i++) {
+		cloneArr.push(arr[i]);
+	}
+	return cloneArr;
 }
 
 /* 
